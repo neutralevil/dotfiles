@@ -38,14 +38,14 @@
      python
      racket
      (ruby :variables
-           ruby-enable-enh-ruby-mode t
+           ;;ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rbenv
            ruby-test-runner 'ruby-test)
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; syntax-checking
-     semantic
+     ;;semantic
      version-control
 
      neutralevil
@@ -179,7 +179,13 @@ before layers configuration."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
-  )
+  (setq-default js-indent-level 2
+                js2-basic-offset 2
+                css-indent-offset 2
+                web-mode-markup-indent-offset 2
+                web-mode-css-indent-offset 2
+                web-mode-code-indent-offset 2
+                ))
 
 (defun dotspacemacs/user-config ()
   "Configuration function.

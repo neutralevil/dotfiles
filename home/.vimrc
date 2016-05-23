@@ -45,6 +45,8 @@ NeoBundle 'tpope/vim-fireplace.git'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'guns/vim-clojure-highlight'
 
+NeoBundle 'artur-shaik/vim-javacomplete2'
+
 NeoBundle 'tfnico/vim-gradle'
 let neo_bundle_enabled=0
 " if has('lua')
@@ -324,4 +326,5 @@ xmap S <Plug>Sneak_S
 omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 
-
+" vim-javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
